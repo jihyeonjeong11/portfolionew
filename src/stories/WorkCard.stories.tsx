@@ -16,8 +16,4 @@ const Template: ComponentStory<typeof WorkCard> = (args) => <WorkCard {...args} 
 
 export const Primary = Template.bind({});
 Primary.args = {
-  isBlog: true,
-  img: 'babygo',
-  name: 'babygo',
-  description: 'description'
 };

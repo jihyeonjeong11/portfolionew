@@ -16,8 +16,4 @@ const Template: ComponentStory<typeof Socials> = (args) => <Socials {...args} />
 
 export const Primary = Template.bind({});
 Primary.args = {
-  isBlog: true,
-  img: 'babygo',
-  name: 'babygo',
-  description: 'description'
 };

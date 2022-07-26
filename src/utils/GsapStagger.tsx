@@ -1,6 +1,6 @@
 import gsap, { Power3 } from "gsap";
 
-export const stagger = (target, fromvVars: any, toVars) => {
+export const stagger = (target: any, fromvVars: any, toVars: any) => {
   return gsap.fromTo(
     target,
     { opacity: 0, ...fromvVars },

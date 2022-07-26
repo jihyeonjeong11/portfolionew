@@ -16,10 +16,10 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  isBlog: true
+  isBlog: () => false
 };
 
 export const Secondary = Template.bind({});
 Primary.args = {
-  isBlog: false
+  isBlog: () => false
 };
