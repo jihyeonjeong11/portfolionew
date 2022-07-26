@@ -7,9 +7,8 @@ const nextConfig = {
       fallback: {
         util: require.resolve("util/")
       }
+    }
   }
-  },
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
 
 }
 
