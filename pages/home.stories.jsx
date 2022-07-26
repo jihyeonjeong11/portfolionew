@@ -1,7 +1,6 @@
 // /stories/pages/home.stories.jsx
 
 import Home from "../pages/index";
-import "../styles/globals.css";
 
 
 export default {
