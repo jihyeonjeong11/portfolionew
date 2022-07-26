@@ -14,7 +14,7 @@ const WorkCard = ({ img = '', name = '', description = '', onClick = () => null,
     return (
         <div
             className="overflow-hidden cursor-pointer rounded-lg p-2 laptop:p-4 first:ml-0"
-            onClick={onClick}
+            onClick={() => null}
         >
             <div
                 className="overflow-hidden rounded-lg h-48 mob:h-auto group "
