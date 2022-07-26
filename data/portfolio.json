@@ -1,0 +1,104 @@
+
+{
+    "name":"Jihyeon",
+    "headerTaglineOne":"Hello 👋",
+    "headerTaglineTwo":"I'm Jihyeon - developer",
+    "headerTaglineThree":"seeking healthy code",
+    "headerTaglineFour":"based in Seoul, Korea.",
+    "showBlog":true,
+    "socials":[
+       {
+          "title":"Github",
+          "link":"https://github.com/jihyeonjeong11"
+       },
+       {
+          "title":"LinkedIn",
+          "link":"https://www.linkedin.com/in/jihyeon-jeong/"
+       },
+       {
+          "title":"Blog",
+          "link":"https://velog.io/@jihyeonjeong11/"
+       },
+       {
+          "title":"Email",
+          "link":"mailto:wjdwlgus11@gmail.com"
+       }
+    ],
+    "projects":[
+      {
+         "id":"1",
+         "title":"Babygo",
+         "description":"Tech Lead",
+         "imageKey":"babygo",
+         "url":"https://babygo.kr",
+         "stack": "ReactJS, React-Native, Python-Django, AWS, Firebase Google Cloud",
+         "work1": "Supervised RN app - Caching, ES6 methods, Typescript..",
+         "work2": "Django improvement - Introducing API doc, hangling errors..",
+         "work3": "AWS Optimization - Cloudfront, function for caching..",
+         "work4": "AUtomated Data Pipeline - Firebase - Google Clouds Bigquery",
+         "work5": "Devops - RN Codepush, Sentry.io",
+         "work6": "E-commerce(Fullstack) - port from Naver Shopping"
+      },
+      {
+         "id":"2",
+         "title":"Flyingcat",
+         "description":"Frontend dev",
+         "imageKey":"flyingcat",
+         "url":"not available",
+         "stack": "ReactJS, React-Native, Python-Django, AWS",
+         "work1": "Supervised RN app - Caching, ES6 methods, Reactive styling..",
+         "work2": "State management - Introduced Redux, Redux-Persist..",
+         "work3": "E-commerce(Front) - port from Godomall",
+         "work4": "AUtomated Data Pipeline - Firebase - Appsflyer",
+         "work5": "Social Logins - Kakao, Naver, Google"
+      },
+       {
+          "id":"3",
+          "title":"Vegetas",
+          "description":"Main dev",
+          "imageKey":"vegetas",
+          "url":"not available",
+          "stack": "ReactJS, React-Native, NodeJS-Express",
+          "work1": "NodeJs-Express backend logic",
+          "work2": "Built React-Native foundation",
+          "work3": "Intergrated Google map interactive features"
+       }
+       
+
+  
+    ],
+    "skills":[
+       {
+          "id":"1",
+          "title":"Javascript",
+          "period": "3 years",
+          "description":"Always curious about efficent ways making my code more readable, modern and healthy.",
+          "forFuture": "Check interview questions for filling  thos texts"
+       },
+       {
+          "id":"2",
+          "title":"React-Native",
+          "period": "3 years",
+          "description":"Learned a lot writing this: mobile design principles, handling native constraints."
+       },
+       {
+          "id":"3",
+          "title":"ReactJS",
+          "period": "3 years",
+          "description":"Been using React since I started frontend dev career. Keep renewing my knowledge on the edge and currently learning NextJs for SSR feature."
+       },
+       {
+          "id":"4",
+          "title":"Python",
+          "period": "1 year",
+          "description":"Learned basics for a year maintaining Babygo server. I know basic types and syntaxes but there still a lot of rooms to improve!"
+       },
+       {
+          "id":"5",
+          "title":"Django",
+          "period": "1 year",
+          "description":"Serializers can save tons of work rather than NodeJS-Express. Hope I can learn it more in the future."
+          
+       }
+    ]
+ }
