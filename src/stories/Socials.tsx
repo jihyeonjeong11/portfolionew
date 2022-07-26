@@ -18,5 +18,5 @@ const Socials = ({ className, }:SocialProps) => {
         </div>
     );
 };
-
+//
 export default Socials;
