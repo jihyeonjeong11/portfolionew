@@ -25,6 +25,25 @@ type RefType = HTMLDivElement;
 
 
 
+interface WorkObjectProps {
+    id: string;
+    title: string;
+    description: string;
+    imageKey: string;
+    url: string;
+    stack: string;
+    work1?: string;
+    work2?: string;
+    work3?: string;
+    work4?: string;
+    work5?: string;
+    work6?: string;
+    [key: string]: WorkObjectProps[keyof WorkObjectProps];
+
+
+}
+
+
 const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, ref) => {
     const [componentDidRender, tick] = useState(true)
     useEffect(() => {
@@ -70,7 +89,7 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
                     work: (
                         <div className='grid grid-cols-1 tablet:grid-cols-2 gap-4 opacity-1'>
                             {data.projects.map((project) => {
-                                const workArr = ((Object.keys(project).filter((item) => item.includes('work')))).map((item) => project[item])
+                                const workArr = values(project)
                                 return (
 
                                     <WorkCard
@@ -96,6 +115,11 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
         </div>
     )
 })
+
+function values(project: WorkObjectProps) {
+    const filteredArr = Object.keys(project).filter((item) => item.includes('work')) as (keyof WorkObjectProps)[]
+    return filteredArr.map((item, index) => (project[item]))
+}
 
 const Component = forwardRef<RefType, SectionProps>(({type= 'work'}, ref) => {
 

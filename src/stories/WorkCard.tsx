@@ -6,7 +6,7 @@ interface WorkCardProps {
     name: string;
     description: string;
     onClick: () => void;
-    workArr: Array<String>;
+    workArr: Array<String | undefined>;
     stack: string;
 }
 
