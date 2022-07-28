@@ -21,7 +21,6 @@ function useIntersectionObserver(
 ): IntersectionObserverEntry | undefined {
   const [entry, setEntry] = useState<IntersectionObserverEntry>();
 
-  const newRef = React.createRef<HTMLDivElement>()
 
 
   const frozen = entry?.isIntersecting && freezeOnceVisible;
@@ -31,7 +30,8 @@ function useIntersectionObserver(
   };
 
   useEffect(() => {
-    const node = newRef?.current; // DOM Ref
+    const asserted = elementRef as RefObject<HTMLDivElement>;
+    const node = asserted?.current; // DOM Ref
     const hasIOSupport = !!window.IntersectionObserver;
 
     if (!hasIOSupport || frozen || !node) return;

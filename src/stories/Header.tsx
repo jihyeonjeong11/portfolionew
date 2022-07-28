@@ -42,7 +42,7 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                             </Popover.Button>
                         </div>
                         <Popover.Panel className="absolute right-0 z-10 w-11/12 p-4 bg-white shadow-md rounded-md">
-                            {!isBlog ? (
+                            {isBlog ? (
                                 <div className="grid grid-cols-1">
                                     <Button onClick={handleWorkScroll}>
                                         Work
@@ -110,7 +110,7 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                 >
                     jihyeonjeong1117@gmail.com
                 </h1>
-                {!isBlog ? (
+                {isBlog ? (
                     <div className="flex">
                         <Button onClick={handleWorkScroll}>Work</Button>
                         <Button onClick={handleSkillScroll}>Skill</Button>

@@ -22,7 +22,8 @@ const Home: NextPage = () => {
   const textFour = useRef<HTMLDivElement>(null)
 
   const [stuck, setStuck] = useState(false)
-  const workRef = useRef<HTMLDivElement | null>(null)
+  //const workRef = useRef<HTMLDivElement | null>(null)
+  const workRef = useRef<HTMLDivElement | null>(null);
   const skillRef = useRef<HTMLDivElement | null>(null)
   const footerRef = useRef<HTMLDivElement | null>(null)
 

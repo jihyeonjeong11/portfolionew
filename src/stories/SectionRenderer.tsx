@@ -16,7 +16,7 @@ interface RefProps {
     ref: HTMLDivElement;
 }
 
-type RefType = HTMLDivElement;
+type RefType = HTMLDivElement | null;
 
 //https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forward_and_create_ref
 // forwardRef는 위 주소에 따르면 type을 만들어서 넘기거나, 아니면 그대로 HTMLDivElement를 아래 그대로 써준다.
@@ -49,6 +49,7 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
     useEffect(() => {
         setTimeout(() => tick(false), 500)
     }, [])
+    
 
     const entry = useIntersectionObserver(ref, {})
     const isVisible = !!entry?.isIntersecting
@@ -57,10 +58,10 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
             <div
                 style={{
                     position: "relative",
-                    opacity: !componentDidRender ? 1 : 0.2,
+                    opacity: !componentDidRender && isVisible ? 1 : 0.2,
                     transition: "opacity 0.6s ease-in-out, bottom 0.6s ease-in-out",
                     transitionDelay: "0.1s",
-                    bottom: !componentDidRender ? "0px" : "100px",
+                    bottom: !componentDidRender && isVisible ? "0px" : "100px",
                 }}
                 // style={{
                 //     position: "relative",
