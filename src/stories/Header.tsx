@@ -65,30 +65,7 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                                         Contact
                                     </Button>
                                 </div>
-                                <div className="grid grid-cols-1">
-                                    <Button
-                                        onClick={() => router.push("/")}
-                                        classes="first:ml-1"
-                                    >
-                                        Home
-                                    </Button>
-                                    {data.showBlog && (
-                                        <Button
-                                            onClick={() => window.open(
-                                                "https://velog.io/@jihyeonjeong11"
-                                            )}
-                                        >
-                                            Blog
-                                        </Button>
-                                    )}
-                                    <Button
-                                        onClick={() =>
-                                            window.open("mailto:jihyeonjeong1117@gmail.com")
-                                        }
-                                    >
-                                        Contact
-                                    </Button>
-                                </div>
+
 
                         </Popover.Panel>
                     </>
