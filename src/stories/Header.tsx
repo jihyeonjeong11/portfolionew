@@ -10,10 +10,9 @@ interface HeaderProps {
     handleSkillScroll: () => void;
     handleContactScroll: () => void;
 
-    isBlog: () => void;
 }
 
-const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null, isBlog = () => null, handleContactScroll = () => null }: HeaderProps) => {
+const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null, handleContactScroll = () => null }: HeaderProps) => {
     const router = useRouter();
     return (
         <>
@@ -42,7 +41,6 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                             </Popover.Button>
                         </div>
                         <Popover.Panel className="absolute right-0 z-10 w-11/12 p-4 bg-white shadow-md rounded-md">
-                            {isBlog ? (
                                 <div className="grid grid-cols-1">
                                     <Button onClick={handleWorkScroll}>
                                         Work
@@ -67,7 +65,6 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                                         Contact
                                     </Button>
                                 </div>
-                            ) : (
                                 <div className="grid grid-cols-1">
                                     <Button
                                         onClick={() => router.push("/")}
@@ -92,7 +89,7 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                                         Contact
                                     </Button>
                                 </div>
-                            )}
+
                         </Popover.Panel>
                     </>
                 )}
@@ -110,7 +107,6 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                 >
                     jihyeonjeong1117@gmail.com
                 </h1>
-                {isBlog ? (
                     <div className="flex">
                         <Button onClick={handleWorkScroll}>Work</Button>
                         <Button onClick={handleSkillScroll}>Skill</Button>
@@ -130,25 +126,6 @@ const Header = ({ handleWorkScroll = () => null, handleSkillScroll = () => null,
                             Contact
                         </Button>
                     </div>
-                ) : (
-                    <div className="flex">
-                        <Button onClick={() => router.push("/")}>Home</Button>
-                        {data.showBlog && (
-                            <Button onClick={() =>
-                                window.open("https://velog.io/@jihyeonjeong11")
-                            }>
-                                Blog
-                            </Button>
-                        )}
-                        <Button
-                            onClick={() =>
-                                window.open("mailto:jihyeonjeong1117@gmail.com")
-                            }
-                        >
-                            Contact
-                        </Button>
-                    </div>
-                )}
             </div>
         </>
     );

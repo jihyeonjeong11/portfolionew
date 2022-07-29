@@ -81,7 +81,6 @@ const Home: NextPage = () => {
           handleWorkScroll={handleWorkScroll}
           handleSkillScroll={handleSkillScroll}
           handleContactScroll={handleContactScroll}
-          isBlog={() => false}
         />
 
         <div className="laptop:mt-20 mt-10">
