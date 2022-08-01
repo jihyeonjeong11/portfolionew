@@ -31,13 +31,13 @@
          "description":"Tech Lead",
          "imageKey":"babygo",
          "url":"https://babygo.kr",
-         "stack": "ReactJS, React-Native, Python-Django, AWS, Firebase Google Cloud",
-         "work1": "Supervised RN app - Caching, ES6 methods, Typescript..",
-         "work2": "Django improvement - Introducing API doc, hangling errors..",
-         "work3": "AWS Optimization - Cloudfront, function for caching..",
-         "work4": "AUtomated Data Pipeline - Firebase - Google Clouds Bigquery",
-         "work5": "Devops - RN Codepush, Sentry.io",
-         "work6": "E-commerce(Fullstack) - port from Naver Shopping"
+         "stack": "ReactJS, React-Native, Python-Django, AWS, Firebase, Google Cloud",
+         "work1": "기존 RN 작성된 앱의 전체적인 개선 담당: 디펜던시 version control, Front단 이미지 캐싱, Redux pattern, ES6 문법 적용 등",
+         "work2": "기존 Python-Django 작성된 서버의 개선 담당: DB 스키마 정리, API endpoints 에러케이스 추가 등",
+         "work3": "AWS 개선: 비용 절감 및 속도개선에 주력: Cloudfront, RDS replica, ELB 등 - 기존 월 10tb의 데이터 전송량을 2tb로 낮춤",
+         "work4": "자동화 유저 사용 데이터 수집 파이프라인 도입: Firebase - Google Clouds Bigquery",
+         "work5": "RN Codepush, Sentry.io 및 Devops 적용",
+         "work6": "차후 도입될 E-commerce 비즈니스 로직 작성(Naver Shopping 기반)"
       },
       {
          "id":"2",
@@ -46,11 +46,11 @@
          "imageKey":"flyingcat",
          "url":"not available",
          "stack": "ReactJS, React-Native, Python-Django, AWS",
-         "work1": "Supervised RN app - Caching, ES6 methods, Reactive styling..",
-         "work2": "State management - Introduced Redux, Redux-Persist..",
-         "work3": "E-commerce(Front) - port from Godomall",
-         "work4": "AUtomated Data Pipeline - Firebase - Appsflyer",
-         "work5": "Social Logins - Kakao, Naver, Google"
+         "work1": "프론트엔드 개발 리드, 개발 방향성 정립",
+         "work2": "react-native를 활용한 앱 제작(android, ios)",
+         "work3": "반응형 스타일링 체계 확립",
+         "work4": "유저 사용 데이터 파이프라인 적용 - Firebase - Appsflyer",
+         "work5": "소셜 로그인 기능 추가 및 유지보수 - Kakao, Naver, Google"
       },
        {
           "id":"3",
@@ -59,9 +59,9 @@
           "imageKey":"vegetas",
           "url":"not available",
           "stack": "ReactJS, React-Native, NodeJS-Express",
-          "work1": "NodeJs-Express backend logic",
-          "work2": "Built React-Native foundation",
-          "work3": "Intergrated Google map interactive features"
+          "work1": "NodeJs 백엔드 작성",
+          "work2": "구글 지도 및 interactive features(custom markers, search range) 작성",
+          "work3": "react-native android 빌드 체계 확립"
        }
        
 
@@ -72,32 +72,32 @@
           "id":"1",
           "title":"Javascript",
           "period": "3 years",
-          "description":"Always curious about efficent ways making my code more readable, modern and healthy.",
+          "description":"ES6 문법을 통해서 서비스를 제작할 수 있습니다. 현재는 협업을 위해 Typescript를 공부 중입니다.",
           "forFuture": "Check interview questions for filling  thos texts"
        },
        {
           "id":"2",
           "title":"React-Native",
           "period": "3 years",
-          "description":"Learned a lot writing this: mobile design principles, handling native constraints."
+          "description":"React-Native로 서비스 하나 런칭, 유지 보수 및 리팩토링 하였습니다. 급변하는 구글, 애플의 업데이트에 대응하며 최신화된 코드를 학습 및 적용합니다."
        },
        {
           "id":"3",
           "title":"ReactJS",
           "period": "3 years",
-          "description":"Been using React since I started frontend dev career. Keep renewing my knowledge on the edge and currently learning NextJs for SSR feature."
+          "description":"클래스형, 함수형 컴포넌트를 모두 경험했습니다. 그 과정에서 필요한 Dependency를 직접 학습 및 적용했고 NextJS 역시 공부 중입니다."
        },
        {
           "id":"4",
           "title":"Python",
           "period": "1 year",
-          "description":"Learned basics for a year maintaining Babygo server. I know basic types and syntaxes but there still a lot of rooms to improve!"
+          "description":"회사 백엔드를 유지보수하며 기본적인 문법사용 및 Use-Case를 학습했습니다."
        },
        {
           "id":"5",
           "title":"Django",
           "period": "1 year",
-          "description":"Serializers can save tons of work rather than NodeJS-Express. Hope I can learn it more in the future."
+          "description":"Django Rest-Api를 통해 서버의 구조를 익히며 개선했습니다."
           
        }
     ]

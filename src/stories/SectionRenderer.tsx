@@ -12,10 +12,6 @@ interface SectionProps {
     type: string;
 }
 
-interface RefProps {
-    ref: HTMLDivElement;
-}
-
 type RefType = HTMLDivElement | null;
 
 //https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forward_and_create_ref
@@ -38,7 +34,7 @@ interface WorkObjectProps {
     work4?: string;
     work5?: string;
     work6?: string;
-    [key: string]: WorkObjectProps[keyof WorkObjectProps];
+    [key: string]: string | undefined;
 
 
 }
@@ -58,10 +54,10 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
             <div
                 style={{
                     position: "relative",
-                    opacity: !componentDidRender && isVisible ? 1 : 0.2,
+                    opacity: !componentDidRender || isVisible ? 1 : 0.2,
                     transition: "opacity 0.6s ease-in-out, bottom 0.6s ease-in-out",
                     transitionDelay: "0.1s",
-                    bottom: !componentDidRender && isVisible ? "0px" : "100px",
+                    bottom: !componentDidRender || isVisible ? "0px" : "100px",
                 }}
                 // style={{
                 //     position: "relative",
@@ -118,7 +114,7 @@ const SectionRenderer = forwardRef<RefType, SectionProps>(({ type = 'work' }, re
 })
 
 function values(project: WorkObjectProps) {
-    const filteredArr = Object.keys(project).filter((item) => item.includes('work')) as (keyof WorkObjectProps)[]
+    const filteredArr = Object.keys(project).filter((item) => item.includes('work'))
     return filteredArr.map((item, index) => (project[item]))
 }
 

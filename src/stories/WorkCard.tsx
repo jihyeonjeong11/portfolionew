@@ -44,7 +44,7 @@ const WorkCard = ({ img = '', name = '', description = '', onClick = () => null,
                             </div>
                             <div className="mt-12 font-small">
                                 {workArr.map((item, index) => (
-                                    <div className="mt-1" key={index+'work'}>{item}</div>
+                                    <div className="mt-1" key={index+'work'}>- {item}</div>
                                 ))}
                             </div>
                         </div>
